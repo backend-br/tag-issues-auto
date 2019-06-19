@@ -11,9 +11,8 @@ const labels = {
             data = require('../mocks/labels');
         }
 
-        let result = [];
-        data.map((label) => {
-            result.push(label.name);
+        let result = data.map((label) => {
+            return label.name;
         })
 
         return result;
